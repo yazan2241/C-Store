@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "167707041223",
+    "firebase_url": "https://cstore-62b96.firebaseio.com",
+    "project_id": "cstore-62b96",
+    "storage_bucket": "cstore-62b96.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:167707041223:android:ec11334d7f382556880de2",
+        "android_client_info": {
+          "package_name": "com.cStore.shop"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "167707041223-t99gjn2ggcqb41dd8qbp7p1qtsntnhhi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAWc2SD2xg25GEQefmWSFSI0BjF-wyh9CU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "167707041223-t99gjn2ggcqb41dd8qbp7p1qtsntnhhi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

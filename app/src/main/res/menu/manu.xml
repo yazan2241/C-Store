@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.cStore.shop.MainActivity">
+<group>
+    <item
+        android:id="@+id/profile"
+        android:icon="@drawable/profile1"
+        android:title="@string/profile" />
+    <item
+        android:id="@+id/addNewProduct"
+        android:icon="@drawable/plus_circle"
+        android:iconTint="@color/green"
+    android:title="@string/add_prod" />
+    <item
+        android:id="@+id/buyingProduct"
+        android:icon="@drawable/ic_keep_2"
+        android:title="@string/cart" />
+    <item
+        android:id="@+id/category"
+        android:icon="@drawable/profile1"
+        android:title="@string/categories" />
+    <item
+        android:id="@+id/noti"
+        android:icon="@drawable/profile1"
+        android:title="@string/notif" />
+</group>
+<group>
+
+    <item
+        android:id="@+id/Logout1"
+        android:icon="@drawable/lock"
+        android:iconTint="@color/red"
+        android:title="@string/logout" />
+</group>
+</menu>

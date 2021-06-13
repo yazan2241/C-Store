@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#f5f5f5"
+    tools:context="com.cStore.shop.Edit_profile">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="64dp"
+            android:orientation="vertical">
+
+            <include
+                layout="@layout/toolbar_profile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="105dp"
+                android:layout_marginTop="7dp"
+                android:orientation="horizontal">
+
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profile_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="19dp"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/profile1" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:gravity="center"
+
+                android:orientation="horizontal"
+                android:paddingTop="10dp">
+
+                <Button
+                    android:id="@+id/choosePicture"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                   android:background="#f5f5f5"
+                    android:gravity="center"
+                    android:onClick="changePicture"
+                    android:text="تغيير الصورة"
+                    android:textColor="@color/green" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:orientation="vertical">
+
+                <customfonts.EditText_Roboto_Regular
+                    android:id="@+id/editText_Roboto_Regular2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/rect_gray"
+                    android:hint="@string/marketname"
+                    android:inputType="textEmailAddress"
+                    android:padding="15dp"
+                    android:textColor="#c6c6c6"
+                    android:textColorHint="#c6c6c6"
+                    android:textSize="17sp" />
+
+                <customfonts.EditText_Roboto_Regular
+                    android:id="@+id/editText_Roboto_Regular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/rect_gray"
+                    android:hint="@string/marketname2"
+                    android:inputType="textEmailAddress"
+                    android:padding="15dp"
+                    android:textColor="#c6c6c6"
+                    android:textColorHint="#c6c6c6"
+                    android:textSize="17sp" />
+
+                <customfonts.EditText_Roboto_Regular
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/rect_gray"
+                    android:hint="@string/marketnumber"
+                    android:inputType="textEmailAddress"
+                    android:padding="15dp"
+                    android:textColor="#c6c6c6"
+                    android:textColorHint="#c6c6c6"
+                    android:textSize="17sp" />
+
+                <customfonts.EditText_Roboto_Regular
+                    android:id="@+id/editText_Roboto_Regular3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/rect_gray"
+                    android:hint="@string/mobile"
+                    android:inputType="textEmailAddress"
+                    android:padding="15dp"
+                    android:textColor="#c6c6c6"
+                    android:textColorHint="#c6c6c6"
+                    android:textSize="17sp" />
+
+                <customfonts.EditText_Roboto_Regular
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/rect_gray"
+                    android:hint="@string/email"
+                    android:inputType="textEmailAddress"
+                    android:padding="15dp"
+                    android:textColor="#c6c6c6"
+                    android:textColorHint="#c6c6c6"
+                    android:textSize="17sp" />
+
+                <customfonts.EditText_Roboto_Regular
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/rect_gray"
+                    android:gravity="right"
+                    android:hint="@string/password"
+                    android:inputType="textPassword"
+                    android:padding="15dp"
+                    android:textColor="#c6c6c6"
+                    android:textColorHint="#c6c6c6"
+                    android:textSize="17sp" />
+
+                <customfonts.EditText_Roboto_Regular
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/rect_gray"
+                    android:gravity="right"
+                    android:hint="@string/password2"
+                    android:inputType="textPassword"
+                    android:padding="15dp"
+                    android:textColor="#c6c6c6"
+                    android:textColorHint="#c6c6c6"
+                    android:textSize="17sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/uploadRequest"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginRight="3dp"
+                        android:layout_weight="1"
+                        android:background="@color/green"
+                        android:text="حفظ"
+                        android:onClick="uploadPicture"
+                        android:textColor="#FFFFFF" />
+
+                    <Button
+                        android:id="@+id/button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginRight="3dp"
+                        android:layout_weight="1"
+                        android:background="@color/green"
+                        android:text="إلغاء"
+                        android:textColor="#FFFFFF" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+
+
+</RelativeLayout>

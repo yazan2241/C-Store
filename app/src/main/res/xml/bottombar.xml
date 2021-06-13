@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<tabs>
+
+
+
+    <tab
+        id="@+id/tab_offer"
+        icon="@drawable/ic_black_shop_tag"
+        icononly="true"
+        inActiveColor="#9b9b9b"
+
+        activeColor="@color/green"/>
+    <tab
+        id="@+id/tab_home"
+        icon="@drawable/ic_home_black_building_symbol"
+        icononly="true"
+        inActiveColor="#9b9b9b"
+        activeColor="@color/green"/>
+    <tab
+        id="@+id/tab_shape"
+        icon="@drawable/ic_shape"
+        icononly="true"
+        inActiveColor="#9b9b9b"
+        onClick="prof2"
+        activeColor="@color/green"/>
+
+</tabs>

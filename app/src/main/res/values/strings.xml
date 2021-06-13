@@ -1,0 +1,23 @@
+<resources>
+
+
+    <string name="cutprice"><strike>$250</strike></string>
+    <string name="openDrawer">open_drawer</string>
+    <string name="closeDrawer">close_drawer</string>
+    <string name="channel_name">channel</string>
+    <string name="channel_des">Channel Des</string>
+    <string name="channel_id">channel id</string>
+    <string name="Time">12:05</string>
+    <string name="title_activity_main_page">MainPage</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+    <string name="prchase">امحمد ارسل لك طلب شراء</string>
+    <string name="notificaation_order">طلب الشراء</string>
+    <string name="buy">buy</string>
+    <string name="textview1">اسم المنتج</string>
+    <string name="textview2">اسم العلامة التجارية</string>
+    <string name="textview3">عدد القطع المباعة</string>
+    <string name="admins">صفحة الادمن</string>
+
+
+</resources>

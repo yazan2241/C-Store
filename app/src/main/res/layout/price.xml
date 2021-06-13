@@ -1,0 +1,438 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".ProductDetailActivity"
+    android:background="#ffffff">
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:background="#f5f5f5"
+                android:layout_marginTop="18dp"
+                android:layout_marginLeft="11.7dp"
+                android:layout_marginRight="11.7dp"
+                android:layout_marginBottom="15dp"
+                android:layout_height="280dp">
+
+                <androidx.viewpager.widget.ViewPager
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/viewpager"/>
+
+                <com.viewpagerindicator.LinePageIndicator
+                    android:id="@+id/indicator"
+                    android:padding="5dip"
+                    android:layout_height="wrap_content"
+                    android:layout_width="fill_parent"
+                    android:layout_gravity="bottom"
+                    android:layout_marginBottom="20dp"
+                    app:strokeWidth="2dp"
+                    app:lineWidth="50dp"
+                    app:unselectedColor="#cdced2"
+                    app:selectedColor="#000000"
+                    />
+
+
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="11.7dp">
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="11.7dp"
+                    android:orientation="horizontal">
+
+                    <customfonts.MyTextView_Roboto_Regular
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/price"
+                         android:id="@+id/product_price"
+                        android:textColor="@color/green"
+                        android:textSize="13sp" />
+
+                </LinearLayout>
+
+
+                <customfonts.MyTextView_Roboto_Bold
+                    android:id="@+id/product_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="13dp"
+                    android:text="@string/Productname"
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+
+                <LinearLayout
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="16dp"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/seller"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:onClick="openMyProduct"
+                        android:text="شركة الهرم"
+                        android:textColor="@color/red"
+                        android:textSize="16sp"
+                        tools:ignore="OnClick" />
+
+                    <View
+
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/red" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/cat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="13dp"
+                    android:text="@string/itemcategory"
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+
+                <LinearLayout
+                    android:layout_width="303dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="13dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="11.7dp"
+                        android:layout_marginBottom="12dp"
+
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/shosel"
+                        android:textSize="13sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <CheckBox
+                            android:id="@+id/small"
+                            android:layout_width="50dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0"
+                            android:onClick="choosSize"
+                            android:text="S" />
+
+                        <CheckBox
+                            android:id="@+id/mediam"
+                            android:layout_width="50dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0"
+                            android:onClick="choosSize"
+                            android:text="M" />
+
+                        <CheckBox
+                            android:id="@+id/larg"
+                            android:layout_width="50dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0"
+                            android:onClick="choosSize"
+                            android:text="L" />
+
+                        <CheckBox
+                            android:id="@+id/xlarg"
+                            android:layout_width="50dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0"
+                            android:onClick="choosSize"
+                            android:text="XL" />
+
+                        <CheckBox
+                            android:id="@+id/xxlarg"
+                            android:layout_width="53dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0"
+                            android:onClick="choosSize"
+                            android:text="XXL" />
+
+                        <CheckBox
+                            android:id="@+id/xxxlarg"
+                            android:layout_width="63dp"
+                            android:layout_height="match_parent"
+                            android:onClick="choosSize"
+                            android:text="XXXL" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="13dp"
+                    android:orientation="horizontal">
+
+                    <customfonts.MyTextView_Roboto_Regular
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="11.7dp"
+                        android:layout_marginBottom="12dp"
+                        android:text="@string/Productnumber"
+                        android:textColor="#8c8c8c"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/quan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="11.7dp"
+                        android:layout_marginBottom="12dp"
+                        android:text="@string/avaiablenimber"
+                        android:textColor="@color/red"
+                        android:textSize="13sp" />
+                </LinearLayout>
+
+                <customfonts.MyTextView_Roboto_Regular
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="11.7dp"
+                    android:layout_marginBottom="12dp"
+                    android:text="@string/choosecolor"
+                    android:textColor="@color/green"
+                    android:textSize="13sp" />
+
+                <HorizontalScrollView
+                    android:layout_width="wrap_content"
+                    android:layout_height="64dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="13dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="64dp"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/redColor"
+                            android:onClick="choosingColor"                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_margin="4dp"
+                            android:background="@drawable/red_border" />
+
+                        <Button
+                            android:id="@+id/blackColor"
+                            android:onClick="choosingColor"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_margin="4dp"
+                            android:background="@drawable/black_border" />
+
+                        <Button
+                            android:id="@+id/blueColor"
+                            android:onClick="choosingColor"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_margin="4dp"
+                            android:background="@drawable/blue_border" />
+
+                        <Button
+                            android:id="@+id/whiteColor"
+                            android:onClick="choosingColor"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_margin="4dp"
+                            android:background="@drawable/white_border" />
+
+                        <Button
+                            android:id="@+id/greenColor"
+                            android:onClick="choosingColor"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_margin="4dp"
+                            android:background="@drawable/button_border"
+
+                            />
+
+                        <Button
+                            android:id="@+id/grayColor"
+                            android:onClick="choosingColor"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_margin="4dp"
+                            android:background="@drawable/gray_border" />
+
+                        <Button
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_margin="4dp"
+                            android:background="@drawable/red_border" />
+                    </LinearLayout>
+                </HorizontalScrollView>
+
+                <customfonts.MyTextView_Roboto_Regular
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="11.7dp"
+                    android:layout_marginBottom="12dp"
+                    android:text="@string/description"
+                    android:textColor="#8c8c8c"
+                    android:textSize="13sp" />
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="#f5f5f5"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:paddingLeft="11.7dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:text="@string/quantity" />
+
+                <ImageButton
+                    android:id="@+id/button_quantity_minus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@null"
+                    android:onClick="subQantity"
+                    android:tint="@color/cardview_shadow_end_color"
+                    app:srcCompat="@drawable/minus_circle"
+                    tools:ignore="VectorDrawableCompat" />
+
+                <EditText
+                    android:id="@+id/item_details_quant"
+                    android:layout_width="16dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:text="@string/quantity_num" />
+
+                <ImageButton
+                    android:id="@+id/button_quantity_add"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="10dp"
+                    android:background="@null"
+                    android:onClick="addQuantity"
+                    android:tint="@color/cardview_shadow_end_color"
+                    app:srcCompat="@drawable/plus_circle"
+                    tools:ignore="VectorDrawableCompat" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/add_cart"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:background="@color/green"
+
+                    android:fontFamily="sans-serif-black"
+
+                    android:text="@string/addtocart"
+                    android:textColor="@color/white" />
+
+                <Button
+                    android:id="@+id/checkout"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:background="@color/green"
+android:onClick="sendNotif"
+                    android:fontFamily="sans-serif-black"
+                    android:text="@string/buy"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="#f5f5f5"/>
+
+
+            <customfonts.MyTextView_Roboto_Regular
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="17dp"
+                android:layout_marginTop="18dp"
+                android:text="@string/Similarproducts"
+                android:textColor="#cccccc"
+                android:textSize="13sp" />
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:nestedScrollingEnabled="false"
+                android:id="@+id/recyclerview3"/>
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+
+</LinearLayout>

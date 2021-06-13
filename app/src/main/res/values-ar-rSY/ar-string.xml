@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="notif">إشعارات</string>
+    <string name="upload">رفع</string>
+    <string name="promoprice"><strike>8000 SP</strike></string>
+    <string name="searchresult">نتائج البحث</string>
+    <string name="profile">الملف الشخصي</string>
+    <string name="Productdetails">تفاصيل المنتج</string>
+    <string name="category">تصنيفات</string>
+    <string name="search">بحث</string>
+    <string name="cart">السلة</string>
+    <string name="Productname">اسم المنتج</string>
+    <string name="description">وصف المنتج </string>
+    <string name="buynow">شراء</string>
+    <string name="quantity">الكمية:</string>
+    <string name="Similarproducts">منتجات مشابهة</string>
+    <string name="itemname">اسم المنتج</string>
+    <string name="addtocart" >اضافة الى السلة</string>
+    <string name="price_1"> : السعر</string>
+    <string name="id">: المعرف </string>
+    <string name="item_id"> معرف العنصر</string>
+    <string name="price"> 7000 sp </string>
+    <string name="itemcategory">البسة</string>
+    <string name="paymnent">المستخدم ارسل لك طلبية </string>
+    <string name="quantity_num">1</string>
+    <string name="select_photo">اختر صورة</string>
+    <string name="name">الاسم</string>
+    <string name="email">البريد الالكتروني</string>
+    <string name="address">العنوان</string>
+    <string name="type">نوع التاجر</string>
+    <string name="password">كلمة السر</string>
+
+    <string name="password2">تأكيد كلمة السر</string>
+    <string name="add_prod">إضافة منتج</string>
+    <string name="Wishlist">المفضلة</string>
+    <string name="recive">الطلبات المستلمة </string>
+    <string name="logout">تسجيل الخروج </string>
+    <string name="about">حول </string>
+    <string name="Settings">إعدادات </string>
+    <string name="custom">اختر القياس</string>
+    <string name="Productnumber"> عدد القطع المتوافرة </string>
+    <string name="avaiablenimber">3</string>
+    <string name="choosecolor">اختر الالوان المطلوبة</string>
+
+
+
+    <string name="dress">فساتين</string>
+    <string name="taxido">بدلات</string>
+    <string name="shoes">أحذية</string>
+    <string name="trouser">بنطال</string>
+    <string name="shirt">قمصان</string>
+    <string name="necktie">ربطة عنق</string>
+    <string name="jacket">جاكيت</string>
+    <string name="categories">التنصنيفات</string>
+    <string name="call">إتصال</string>
+    <string name="buy">شراء</string>
+    <string name="shosel">القياسات المتوفرة</string>
+
+    <string name="app_name">نسيج</string>
+
+
+    <string name="marketname">اسم العلامة التجارية </string>
+    <string name="marketname2">اسم صاحب العلامة </string>
+    <string name="marketnumber">رقم السجل التجاري </string>
+    <string name="mobile">رقم الموبايل </string>
+    <string name="producttype">صنف القطعة</string>
+
+    <string name="cuse">سبب التواجد </string>
+    <string name="accounttype">سبب التواجد </string>
+    <string name="prchase">امحمد ارسل لك طلب شراء</string>
+    <string name="notificaation_order">طلب الشراء</string>
+    <string name="verf">أدخل رمز التحقق</string>
+</resources>

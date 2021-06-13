@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".upload_file">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            tools:ignore="MissingConstraints">
+
+            <include
+                layout="@layout/toolbar_upload"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/uplodedImage"
+                        android:layout_width="match_parent"
+                        android:layout_height="160dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:src="@drawable/black_border_check" />
+
+                    <ImageButton
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_alignTop="@id/uplodedImage"
+                        android:layout_alignRight="@id/uplodedImage"
+                        android:onClick="deleteImage"
+                        android:src="@android:drawable/ic_delete" />
+
+                    <ImageButton
+                        android:id="@+id/firstImage"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="4dp"
+                        android:layout_alignBottom="@+id/uplodedImage"
+                        android:scaleType="fitXY"
+                        android:onClick="changeFirstPic"
+                        android:src="@drawable/black_border_check" />
+
+                    <ImageButton
+                        android:id="@+id/secondImage"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="4dp"
+                        android:onClick="changeSecondPic"
+                        android:layout_toEndOf="@+id/firstImage"
+                        android:layout_toRightOf="@+id/firstImage"
+                        android:layout_alignBottom="@+id/uplodedImage"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/white_border_check"
+                        />
+
+                    <ImageButton
+                        android:id="@+id/thirdImage"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_alignBottom="@+id/uplodedImage"
+
+                        android:onClick="changeThirdPic"
+                        android:layout_toEndOf="@+id/secondImage"
+                        android:layout_toRightOf="@+id/secondImage"
+
+                        android:scaleType="fitXY"
+                        android:src="@drawable/white_border_check" />
+
+
+                </RelativeLayout>
+                <Button
+                    android:id="@+id/uploadProductImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="upload picture"
+                    android:onClick="uploadImageProduct"
+                    android:gravity="center"/>
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="20dp"
+                    android:layout_weight="1"
+                    android:paddingLeft="32dp"
+                    android:paddingRight="32dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/ProductName"
+                        android:hint="@string/Productname" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingLeft="32dp"
+                    android:paddingRight="32dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                       android:id="@+id/ProductPrice"
+                        android:hint="@string/price_1" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingLeft="32dp"
+                    android:paddingRight="32dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/NumberProduct"
+                        android:hint="@string/Productnumber" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="85dp"
+                    android:layout_weight="1"
+                    android:paddingLeft="32dp"
+                    android:paddingRight="32dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:id="@+id/ProductDescription"
+                        android:hint="@string/description" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="11.7dp"
+                    android:layout_marginBottom="12dp"
+
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="اختر التصنيف المناسب"
+                    android:textSize="13sp" />
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <ImageButton
+        android:layout_width="84dp"
+        android:layout_height="84dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:onClick="checkbox"
+        android:id="@+id/dresss"
+        android:scaleType="fitXY"
+        android:src="@drawable/dress" />
+    <ImageButton
+        android:layout_width="84dp"
+        android:layout_height="84dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:onClick="checkbox"
+        android:id="@+id/trouser"
+        android:scaleType="fitXY"
+        android:src="@drawable/trouser" />
+    <ImageButton
+        android:layout_width="84dp"
+        android:layout_height="84dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:onClick="checkbox"
+        android:id="@+id/ties"
+        android:scaleType="fitXY"
+        android:src="@drawable/ties" />
+    <ImageButton
+        android:layout_width="84dp"
+        android:layout_height="84dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:onClick="checkbox"
+        android:id="@+id/shirts"
+        android:scaleType="fitXY"
+        android:src="@drawable/shirt1" />
+    <ImageButton
+        android:layout_width="84dp"
+        android:layout_height="84dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:onClick="checkbox"
+        android:id="@+id/texido"
+        android:scaleType="fitXY"
+        android:src="@drawable/taxedo" />
+    <ImageButton
+        android:layout_width="84dp"
+        android:layout_height="84dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:onClick="checkbox"
+        android:id="@+id/shoess"
+        android:scaleType="fitXY"
+        android:src="@drawable/shoes" />
+    <ImageButton
+        android:layout_width="84dp"
+        android:layout_height="84dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:onClick="checkbox"
+        android:id="@+id/jacket"
+        android:scaleType="fitXY"
+        android:src="@drawable/jacket" />
+
+</LinearLayout>
+              <LinearLayout
+                  android:id="@+id/check1"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="8dp"
+                  android:visibility="gone"
+                  android:layout_gravity="center"
+                  android:orientation="horizontal">
+                  <Button
+                      android:layout_width="64dp"
+                      android:layout_height="wrap_content"
+                      android:text="رجالي"
+                      android:layout_marginLeft="4dp"
+                      android:layout_marginRight="4dp"
+                      android:textColor="@color/white"
+                      android:onClick="chooseSize"
+                      android:background="@color/green"/>
+                  <Button
+                      android:layout_width="64dp"
+                      android:layout_height="wrap_content"
+                      android:text="نسائي"
+                      android:layout_marginLeft="4dp"
+                      android:layout_marginRight="4dp"
+                      android:onClick="chooseSize"
+                      android:textColor="@color/white"
+                      android:background="@color/green"/>
+                  <Button
+                      android:layout_width="64dp"
+                      android:layout_height="wrap_content"
+                      android:text="ولادي"
+                      android:layout_marginLeft="4dp"
+                      android:layout_marginRight="4dp"
+                      android:onClick="chooseSize"
+                      android:textColor="@color/white"
+                      android:background="@color/green"/>
+
+              </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/check2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="اختر القياسات المتوافرة"
+                    android:layout_marginTop="8dp"
+                    android:textColor="@color/red"/>
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+                    <CheckBox
+                        android:id="@+id/small"
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0"
+                        android:onClick="choosSize"
+                        android:text="S" />
+
+                    <CheckBox
+                        android:id="@+id/mediam"
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0"
+                        android:onClick="choosSize"
+                        android:text="M" />
+
+                    <CheckBox
+                        android:id="@+id/larg"
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0"
+                        android:onClick="choosSize"
+                        android:text="L" />
+
+                    <CheckBox
+                        android:id="@+id/xlarg"
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0"
+                        android:onClick="choosSize"
+                        android:text="XL" />
+
+                    <CheckBox
+                        android:id="@+id/xxlarg"
+                        android:layout_width="53dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0"
+                        android:text="XXL" />
+
+                    <CheckBox
+                        android:id="@+id/xxxlarg"
+                        android:layout_width="63dp"
+                        android:layout_height="match_parent"
+                        android:onClick="choosSize"
+                        android:text="XXXL" />
+                </LinearLayout>
+                </LinearLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="11.7dp"
+                    android:layout_marginBottom="12dp"
+                    android:text="@string/choosecolor"
+
+                    android:textSize="13sp" />
+
+                <HorizontalScrollView
+                    android:layout_width="wrap_content"
+                    android:layout_height="64dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="64dp"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_margin="4dp"
+                            android:id="@+id/redColor"
+                            android:onClick="choosingColor"
+                            android:background="@drawable/red_border" />
+
+                        <Button
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_margin="4dp"
+                            android:onClick="choosingColor"
+                            android:id="@+id/blackColor"
+                            android:background="@drawable/black_border_check" />
+
+                        <Button
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_margin="4dp"
+                            android:onClick="choosingColor"
+                            android:id="@+id/blueColor"
+                            android:background="@drawable/blue_border" />
+
+                        <Button
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_margin="4dp"
+                            android:onClick="choosingColor"
+                            android:id="@+id/whiteColor"
+                            android:background="@drawable/white_border" />
+
+                        <Button
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_margin="4dp"
+                            android:onClick="choosingColor"
+                            android:id="@+id/greenColor"
+                            android:background="@drawable/button_border"
+
+                            />
+
+                        <Button
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_margin="4dp"
+                            android:onClick="choosingColor"
+                            android:id="@+id/grayColor"
+                            android:background="@drawable/gray_border" />
+
+                        <Button
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_margin="4dp"
+                            android:onClick="choosingColor"
+                            android:id="@+id/pinkColor"
+                            android:background="@drawable/red_border" />
+                    </LinearLayout>
+                </HorizontalScrollView>
+
+
+            </LinearLayout>
+
+
+
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="176dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/green"
+                android:onClick="uploadPicture"
+                android:text="إرسال"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+               />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

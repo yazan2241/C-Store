@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".first">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="180dp"
+        android:layout_height="260dp"
+        android:background="#ffffff"
+        android:orientation="vertical"
+        tools:ignore="UselessParent">
+
+
+
+
+        <!--
+        <customfonts.MyTextView_sfuitext_regular
+            android:id="@+id/discount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:background="@color/green"
+            android:padding="4dp"
+            android:text="25%"
+            android:textColor="#ffffff" />
+-->
+        <ImageButton
+            android:id="@+id/imageshose"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+
+            android:layout_marginTop="8dp"
+            android:background="@drawable/shoes"
+             />
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <customfonts.MyTextView_sfuitext_regular
+                android:id="@+id/text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/price"
+                android:textColor="@color/green"
+                android:textSize="14sp" />
+
+            <customfonts.MyTextView_sfuitext_regular
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="@string/promoprice" />
+
+        </LinearLayout>
+
+        <customfonts.MyTextView_sfuitext_regular
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@string/description"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+</FrameLayout>

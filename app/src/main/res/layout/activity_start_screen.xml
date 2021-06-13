@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="302dp"
+            android:layout_height="338dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="170dp"
+            android:layout_marginRight="25dp"
+            android:src="@drawable/trevor" />
+
+</LinearLayout>

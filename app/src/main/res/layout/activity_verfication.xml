@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+
+                    android:layout_width="188dp"
+                    android:layout_height="108dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="25dp"
+                    android:src="@drawable/trevor1"
+                    android:onClick="Signup"
+                    tools:srcCompat="@drawable/trevor4" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="140dp"
+                    android:layout_marginRight="25dp"
+                    android:orientation="vertical">
+
+                    <customfonts.EditText_Roboto_Regular
+                        android:id="@+id/verification"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/rect_gray"
+                        android:hint="@string/verf"
+                        android:inputType="textEmailAddress"
+                        android:padding="15dp"
+                        android:textColor="#c6c6c6"
+                        android:textColorHint="#c6c6c6"
+                        android:textSize="17sp" />
+
+                </LinearLayout>
+
+                <customfonts.Button_sfuitext_regular
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="18dp"
+                    android:layout_marginRight="25dp"
+                    android:background="@color/green"
+                    android:gravity="center_horizontal"
+                    android:onClick="nextsign"
+                    android:padding="15dp"
+                    android:text="التالي"
+                    android:textAllCaps="false"
+                    android:textColor="#ffffff"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

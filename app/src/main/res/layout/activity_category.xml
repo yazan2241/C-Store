@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CategoryActivity">
+
+    <RelativeLayout android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:background="#f9f9f9"
+            android:orientation="vertical">
+            <include layout="@layout/toolbar_home" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="60dp"
+            android:orientation="vertical">
+
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.7dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:background="#d7d8da" />
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="horizontal"
+    >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="8dp"
+            android:paddingBottom="64dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/taxido"
+                    android:layout_weight="1"
+
+                    android:orientation="vertical">
+
+
+                    <FrameLayout
+                        android:layout_width="125dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/rect_whiteboder"
+                        >
+
+                        <ImageButton
+                            android:id="@+id/taxido1"
+                            android:layout_width="125dp"
+                            android:layout_height="125dp"
+                            android:layout_gravity="center"
+                            android:onClick="goToCatPageTexido"
+                           android:background="@mipmap/taxido1"
+
+                           />
+                    </FrameLayout>
+
+                    <customfonts.MyTextView_sfuitext_regular
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/taxido"
+                        android:textColor="#000000"
+                        android:textSize="15sp" />
+
+                    <customfonts.MyTextView_sfuitext_regular
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="3dp"
+                        android:text="170+ items"
+                        android:textColor="#8c8c8c"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <FrameLayout
+                        android:layout_width="125dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/rect_whiteboder"
+                        >
+
+                        <ImageButton
+                            android:layout_width="125dp"
+                            android:layout_height="125dp"
+                            android:layout_gravity="center"
+android:id="@+id/dress1"
+                            android:onClick="goToCatPageDress"
+                            android:background="@mipmap/dress" />
+                    </FrameLayout>
+
+                    <customfonts.MyTextView_sfuitext_regular
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/dress"
+                        android:textColor="#000000"
+                        android:textSize="15sp" />
+
+                    <customfonts.MyTextView_sfuitext_regular
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="3dp"
+                        android:text="60+ items"
+                        android:textColor="#8c8c8c"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <FrameLayout
+                        android:layout_width="125dp"
+                        android:layout_height="125dp"
+                        android:background="@drawable/rect_whiteboder"
+                        >
+
+                        <ImageButton
+                            android:layout_width="125dp"
+                            android:layout_height="125dp"
+                            android:layout_gravity="center"
+                            android:onClick="goToCatPageShirt"
+                            android:background="@mipmap/shirt1" />
+                    </FrameLayout>
+
+                    <customfonts.MyTextView_sfuitext_regular
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/shirt"
+                        android:textColor="#000000"
+                        android:textSize="15sp" />
+
+                    <customfonts.MyTextView_sfuitext_regular
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="3dp"
+                        android:text="170+ items"
+                        android:textColor="#8c8c8c"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+
+                    android:orientation="vertical">
+
+                    <FrameLayout
+                        android:layout_width="125dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/rect_whiteboder"
+                        >
+
+                        <ImageView
+                            android:layout_width="125dp"
+                            android:layout_height="125dp"
+                            android:layout_gravity="center"
+                            android:onClick="goToCatPageTrouser"
+                            app:srcCompat="@mipmap/trouser" />
+                    </FrameLayout>
+
+                    <customfonts.MyTextView_sfuitext_regular
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/trouser"
+                        android:textColor="#000000"
+                        android:textSize="15sp" />
+
+                    <customfonts.MyTextView_sfuitext_regular
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="3dp"
+                        android:text="90+ items"
+                        android:textColor="#8c8c8c"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+android:paddingRight="8dp"
+                    android:paddingLeft="8dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <FrameLayout
+                        android:layout_width="125dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/rect_whiteboder"
+                        >
+
+                        <ImageView
+                            android:layout_width="125dp"
+                            android:layout_height="125dp"
+                            android:layout_gravity="center"
+                            android:onClick="goToCatPageJacket"
+                            app:srcCompat="@mipmap/jacket" />
+                    </FrameLayout>
+
+                    <customfonts.MyTextView_sfuitext_regular
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/jacket"
+                        android:textColor="#000000"
+                        android:textSize="15sp" />
+
+                    <customfonts.MyTextView_sfuitext_regular
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="3dp"
+                        android:text="90+ items"
+                        android:textColor="#8c8c8c"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <FrameLayout
+                        android:layout_width="125dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/rect_whiteboder"
+                        >
+
+                        <ImageView
+                            android:layout_width="125dp"
+                            android:layout_height="125dp"
+                            android:layout_gravity="center"
+                            android:onClick="goToCatPageTies"
+                            app:srcCompat="@mipmap/nicktie" />
+                    </FrameLayout>
+
+                    <customfonts.MyTextView_sfuitext_regular
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/necktie"
+                        android:textColor="#000000"
+                        android:textSize="15sp" />
+
+                    <customfonts.MyTextView_sfuitext_regular
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="3dp"
+                        android:text="90+ items"
+                        android:textColor="#8c8c8c"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="10dp"
+
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+
+                    android:orientation="vertical">
+
+                    <FrameLayout
+                        android:layout_width="125dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/rect_whiteboder"
+                        >
+
+                        <ImageView
+                            android:layout_width="125dp"
+                            android:layout_height="125dp"
+                            android:layout_gravity="center"
+                            android:onClick="goToCatPageShoes"
+                            app:srcCompat="@mipmap/shoe1" />
+                    </FrameLayout>
+
+                    <customfonts.MyTextView_sfuitext_regular
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/shoes"
+                        android:textColor="#000000"
+                        android:textSize="15sp" />
+
+                    <customfonts.MyTextView_sfuitext_regular
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="3dp"
+                        android:text="90+ items"
+                        android:textColor="#8c8c8c"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+</ScrollView>
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
