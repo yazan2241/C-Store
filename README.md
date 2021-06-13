@@ -49,6 +49,7 @@ This is an Open Sourced full stack E-Commerce App. I started this Project out of
     
     
  # Demo app
- we upload a Debug file for testing
+  check demo app from this link
+  https://drive.google.com/file/d/1kGNlV05RZxXVBUeMN-rI9tlZhkiK9oTP/view?usp=sharing
 
 
