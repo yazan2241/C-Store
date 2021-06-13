@@ -24,12 +24,13 @@ This is an Open Sourced full stack E-Commerce App. I started this Project out of
 # Features
 
 # Built With 🛠
-  Java : Most widely used programming language for Android development.
-  Android Architecture Components - Collection of libraries that help you design robust, testable, and maintainable apps. 
-  GSON - A Java serialization/deserialization library to convert Java Objects into JSON and back.
-  GSON Converter - A Converter which uses Gson for serialization to and from JSON.
-  OkHttp3 - For implementing interceptor, logging and mocking web server.
-  Glide - An image loading and caching library for Android focused on smooth scrolling.
+
+   Java : Most widely used programming language for Android development.
+   Android Architecture Components - Collection of libraries that help you design robust, testable, and maintainable apps. 
+   GSON - A Java serialization/deserialization library to convert Java Objects into JSON and back.
+   GSON Converter - A Converter which uses Gson for serialization to and from JSON.
+   OkHttp3 - For implementing interceptor, logging and mocking web server.
+   Glide - An image loading and caching library for Android focused on smooth scrolling.
   
   
   
