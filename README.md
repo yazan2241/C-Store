@@ -2,7 +2,7 @@
 E-commerce android application
 
 # 🛒 E-Commerce 🛍
-This is an Open Sourced full stack E-Commerce App. I started this Project out of cusiosity and absoulutely no vision . This repository holds basic E-commerce App which I had created 2 years back. You can download demo App to see what it looks like. the app is not finished yet and not licensed , so you can clone it and use it as yours.
+This is an Open Sourced full stack E-Commerce App. I started this Project out of cusiosity and absoulutely no vision . This repository holds basic E-commerce App which I had created 2 years back. You can download demo App to see what it looks like. the app is not finished yet so you might found some crashes, and not licensed so you can clone it and use it as yours.
 
 
 # 📸 Screenshots
@@ -46,4 +46,9 @@ This is an Open Sourced full stack E-Commerce App. I started this Project out of
     SearchView
     SwipeRefresh
     BottomSheet
+    
+    
+ # Demo app
+ we upload a Debug file for testing
+
 
